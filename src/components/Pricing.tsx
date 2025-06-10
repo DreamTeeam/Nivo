@@ -28,7 +28,7 @@ const plans = {
       ],
     },
     {
-      name: "Plan Empresarial",
+      name: "Plan Premium",
       subtitle: "Funciones avanzadas para negocios establecidos",
       price: "$99",
       features: [
@@ -66,7 +66,7 @@ const plans = {
       ],
     },
     {
-      name: "Plan Empresarial",
+      name: "Plan Premium",
       subtitle: "Funciones avanzadas para negocios establecidos",
       price: "$990",
       features: [
@@ -119,48 +119,71 @@ export default function Pricing() {
 
         <div className="grid gap-6 pt-12 lg:grid-cols-3 lg:gap-8">
           {selectedPlans.map((plan) => {
-  const isProPlan = plan.name === "Plan Pro";
+            const isProPlan = plan.name === "Plan Pro";
 
-  return (
-    <div
-      key={plan.name}
-      className={`flex flex-col items-start rounded-xl p-6 border-primary-20 transition-all duration-300 border
-        ${isProPlan ? "bg-primary text-white border-primary shadow-lg" : "bg-primary-foreground text-black border-gray-200"}
+            return (
+              <div
+                key={plan.name}
+                className={`flex flex-col items-start rounded-xl p-6 border-primary-20 transition-all duration-300 border
+        ${
+          isProPlan
+            ? "bg-primary text-white border-primary shadow-lg"
+            : "bg-primary-foreground text-black border-gray-200"
+        }
       `}
-    >
-      {/* Badge "Popular" */}
-      {isProPlan && (
-        <span className="self-end absolute bg-accent text-white px-2 py-1 rounded-md mb-2">
-          Popular
-        </span>
-      )}
+              >
+                {/* Badge "Popular" */}
+                {isProPlan && (
+                  <span className="self-end absolute bg-accent text-white px-2 py-1 rounded-md mb-2">
+                    Popular
+                  </span>
+                )}
 
-      <h3 className="text-2xl font-semibold mb-1">{plan.name}</h3>
-      <p className="text-4xl font-bold mt-2">{plan.price}</p>
-      <span className={`text-base mt-1 mb-4 ${isProPlan ? "text-white/90" : "text-muted-foreground"}`}>
-        {plan.subtitle}
-      </span>
+                <h3 className="text-2xl font-semibold mb-1">{plan.name}</h3>
+                <p className="text-4xl font-bold mt-2">{plan.price}</p>
+                <span
+                  className={`text-base mt-1 mb-4 ${
+                    isProPlan ? "text-white/90" : "text-muted-foreground"
+                  }`}
+                >
+                  {plan.subtitle}
+                </span>
 
-      <ul className="space-y-3 mt-4 text-left text-sm w-full">
-        {plan.features.map((feature, i) => (
-          <li key={i} className="flex items-start gap-2">
-            <CheckIcon className={`h-4 w-4 mt-1 ${isProPlan ? "text-white" : "text-primary"}`} />
-            <span className={isProPlan ? "text-white" : ""}>{feature}</span>
-          </li>
-        ))}
-      </ul>
+                <ul className="space-y-3 mt-4 text-left text-sm w-full">
+                  {plan.features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckIcon
+                        className={`h-4 w-4 mt-1 ${
+                          isProPlan ? "text-white" : "text-primary"
+                        }`}
+                      />
+                      <span className={isProPlan ? "text-white" : ""}>
+                        {feature}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
 
-      <button
-        className={`mt-6 py-2 w-full rounded-2xl cursor-pointer hover:bg-[#0d0d0d] transition-all duration-200 ${isProPlan ? "bg-white text-primary hover:text-white" : "bg-primary text-white"}`}
-      >
-        {plan.name === "Plan Inicial"
-          ? "Empezá ahora"
-          : `Actualizar a ${plan.name.split(" ")[1]}`}
-      </button>
-    </div>
-  );
-})}
-
+                <a
+                  href={`https://wa.me/5491154702118?text=Hola%2C%20me%20interesa%20el%20${encodeURIComponent(
+                    plan.name
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`mt-6 py-2 w-full rounded-2xl text-center block hover:bg-[#0d0d0d] transition-all duration-200 
+            ${
+              isProPlan
+                ? "bg-white text-primary hover:text-white"
+                : "bg-primary text-white"
+            }`}
+                >
+                  {plan.name === "Plan Básico"
+                    ? "Empezá ahora"
+                    : `Elegir ${plan.name.split(" ")[1]}`}
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
