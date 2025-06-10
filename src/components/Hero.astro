@@ -1,0 +1,65 @@
+---
+import "../styles/globals.css";
+---
+
+<section class="bg-white p-8">
+
+<div class="w-full mx-auto max-h-[90dvh] rounded-3xl p-4 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
+        {/* Navbar */}
+        <nav class="flex justify-between items-center mb-12">
+          <div class="text-xl font-bold text-[#6e5cc4] rounded-4xl">
+            <img
+              src="/logoNivo.jpeg"
+              alt="logo Nivo"
+              width={80}
+              height={80}
+              class="rounded-4xl"
+            />
+          </div>
+          <ul class="hidden sm:flex space-x-8 text-base-250">
+            <a href="/#soluciones" class="hover:text-[#6e5cc4]">
+              Soluciones
+            </a>
+            <a href="/#precios" class="hover:text-[#6e5cc4]">
+              Precios
+            </a>
+            <a href="/#faq" class="hover:text-[#6e5cc4]">
+              Faq
+            </a>
+          </ul>
+          <div>
+            <a
+              href="/https://wa.me/5491154702118"
+              class="bg-primary text-white rounded-xl px-5 py-2 hover:bg-[#0d0d0d] transition duration-200 cursor-pointer"
+            >
+              Contacto
+            </a>
+          </div>
+        </nav>
+
+
+        {/* Hero Content */}
+        <main class="text-center">
+          <span class="text-xl font-semibold text-secondary mb-2">¡MUY PRONTO!</span>
+          <h1 class="text-4xl sm:text-5xl font-bold text-primary mb-4">
+            Vendé más. Hacelo fácil.
+          </h1>
+          <p class="text-lg sm:text-xl mb-8">
+            Un sistema de ventas ágil, moderno y pensado para tu negocio.
+          </p>
+
+          {/* Imagen o componente */}
+          <div class="w-full max-w-4xl mx-auto bottom-0">
+            <div class="relative rounded-2xl flex items-center justify-center text-gray-500 ">
+              <img
+                src="/mainImage.jpg"
+                alt="imagen Nivo"
+                width={600}
+                height={300}
+                class="object-cover max-w-full rounded-2xl bottom-0"
+              />
+            </div>
+          </div>
+        </main>
+      </div>
+</section>

@@ -1,0 +1,128 @@
+---
+import {
+  ShoppingCart,
+  CreditCard,
+  Settings,
+  BarChart,
+  Users,
+  Calendar,
+} from '@lucide/astro';
+import "../styles/globals.css";
+---
+
+      <section
+        id="soluciones"
+        class="w-full py-12 md:py-24 lg:py-32 bg-base-4"
+      >
+        <div class="container px-4 md:px-6 mx-auto">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center ">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Un conjunto de funciones ideales para comenzar
+              </h2>
+              <p class="max-w-[900px] text-base-250 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Todo lo que necesitas para gestionar tu negocio de ventas de
+                forma eficiente y eficaz.
+              </p>
+            </div>
+          </div>
+
+          <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+            {/* Gestión de inventario */}
+            <div class="bg-base-200 border-primary-20 rounded-xl">
+              <div class="p-6 flex flex-col items-center text-center space-y-4">
+                <div class="rounded-full bg-primary-20 p-3">
+                  <ShoppingCart class="h-6 w-6 text-primary" />
+                </div>
+                <h3 class="text-base-300 text-xl font-bold">
+                  Gestión de inventario
+                </h3>
+                <p class="text-base-250">
+                  Controla el stock, configura puntos de reposición y gestiona
+                  tu inventario fácilmente.
+                </p>
+              </div>
+            </div>
+
+            {/* Procesamiento de pagos */}
+            <div class="bg-base-200 border-primary-20 rounded-xl">
+              <div class="p-6 flex flex-col items-center text-center space-y-4">
+                <div class="rounded-full bg-primary-20 p-3">
+                  <CreditCard class="h-6 w-6 text-primary" />
+                </div>
+                <h3 class="text-base-300 text-xl font-bold">
+                  Procesamiento de pagos
+                </h3>
+                <p class="text-base-250">
+                  Aceptá todo tipo de pagos: tarjetas, pagos móviles y tarjetas
+                  de regalo.
+                </p>
+              </div>
+            </div>
+
+            {/* Totalmente personalizable */}
+            <div class="bg-base-200 border-primary-20 rounded-xl">
+              <div class="p-6 flex flex-col items-center text-center space-y-4">
+                <div class="rounded-full bg-primary-20 p-3">
+                  <Settings class="h-6 w-6 text-primary" />
+                </div>
+                <h3 class="text-base-300 text-xl font-bold">
+                  Totalmente personalizable
+                </h3>
+                <p class="text-base-250">
+                  Adaptá el sistema POS a las necesidades y procesos específicos
+                  de tu negocio.
+                </p>
+              </div>
+            </div>
+
+            {/* Análisis de ventas */}
+            <div class="bg-base-200 border-primary-20 rounded-xl">
+              <div class="p-6 flex flex-col items-center text-center space-y-4">
+                <div class="rounded-full bg-primary-20 p-3">
+                  <BarChart class="h-6 w-6 text-primary" />
+                </div>
+                <h3 class="text-base-300 text-xl font-bold">
+                  Análisis de ventas
+                </h3>
+                <p class="text-base-250">
+                  Obtené estadísticas en tiempo real sobre tus ventas,
+                  tendencias y comportamiento de los clientes.
+                </p>
+              </div>
+            </div>
+
+            {/* Gestión de clientes */}
+            <div class="bg-base-200 border-primary-20 rounded-xl">
+              <div class="p-6 flex flex-col items-center text-center space-y-4">
+                <div class="rounded-full bg-primary-20 p-3">
+                  <Users class="h-6 w-6 text-primary" />
+                </div>
+                <h3 class="text-base-300 text-xl font-bold">
+                  Gestión de clientes
+                </h3>
+                <p class="text-base-250">
+                  Creá perfiles de clientes, seguí su historial de compras y
+                  aplicá programas de fidelidad.
+                </p>
+              </div>
+            </div>
+
+            {/* Gestión de inventario */}
+            <div class="bg-base-200 border-primary-20 rounded-xl">
+              <div class="p-6 flex flex-col items-center text-center space-y-4">
+                <div class="rounded-full bg-primary-20 p-3">
+                  <Calendar class="h-6 w-6 text-primary" />
+                </div>
+                <h3 class="text-base-300 text-xl font-bold">
+                  Reportes y proyecciones
+                </h3>
+                <p class="text-base-250">
+                  Generá reportes detallados y tomá decisiones basadas en datos
+                  reales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
