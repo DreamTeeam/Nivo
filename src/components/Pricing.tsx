@@ -113,7 +113,7 @@ export default function Pricing() {
               <div className="w-[40px] h-[20px] bg-neutral-500 peer-checked:bg-[#6e5cc4] rounded-full transition-all duration-200"></div>
               <div className="absolute top-[2px] left-[2px] h-[16px] w-[16px] bg-white rounded-full shadow-md transition-all duration-200 peer-checked:translate-x-[20px]"></div>
             </label>
-            <span className="text-sm font-medium">Anual (Ahorras 20%)</span>
+            <span className="text-sm font-medium">Anual</span>
           </div>
         </div>
 
