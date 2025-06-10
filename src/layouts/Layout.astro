@@ -2,10 +2,20 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Nivo es una solución POS moderna y sencilla. Próximamente disponible. ¡Conocé nuestra propuesta!" />
+		<meta name="robots" content="index, follow" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Nivo</title>
+
+	    <!-- Open Graph -->
+	    <meta property="og:title" content="Nivo - Solución POS en desarrollo" />
+	    <meta property="og:description" content="Próximamente disponible. Enterate de todo lo que Nivo tiene para ofrecerte." />
+	    <meta property="og:image" content="https://nivo-blush.vercel.app/logoNivoo.ico" />
+	    <meta property="og:url" content="https://nivo-blush.vercel.app/" />
+	    <meta property="og:type" content="website" />
+
+		<link rel="icon" type="image/x+icon" href="/logoNivoo.ico" />
+		<title>Nivo - Vendé más</title>
 	</head>
 	<body>
 		<slot />
@@ -14,8 +24,8 @@
 
 <style>
 	html {
-  scroll-behavior: smooth;
-},
+		scroll-behavior: smooth;
+	}
 	body {
 		margin: 0;
 		width: 100%;
