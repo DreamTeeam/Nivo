@@ -1,6 +1,6 @@
 # Nivo — Landing Page
 
-![Nivo Logo](./public/logoNivo.ico)
+![Nivo Logo](./public/logoNivoo.ico)
 
 **Nivo** es una landing page publicitaria que anuncia el próximo lanzamiento de nuestro sistema POS (Point of Sale).
 
@@ -34,7 +34,7 @@ Actualmente, esta landing cumple una función informativa y anticipa lo que est�
 
 ## 🔗 Sitio en producción
 
-Accedé al sitio publicado acá: [https://nivo.vercel.app](https://nivo.vercel.app) *(modificar si usás dominio propio)*
+Accedé al sitio publicado acá: [https://nivo-blush.vercel.app](https://nivo-blush.vercel.app/)
 
 ---
 
